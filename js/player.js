@@ -52,16 +52,31 @@ function saveSong(){
 }
 
 
+// function deleteSong(id){
+//     $.ajax({
+//         url: 'handler/deleteSong.php',
+//         type: 'post',
+//         data: { 
+//             "id": id
+//         },
+//         success: function(response){
+//             alert("Sacuvano" + response);
+
+//         },
+//         error: function(xhr){
+//             alert("GRESKA" + xhr);
+//         }
+//      });
+// }
 function deleteSong(id){
     $.ajax({
         url: 'handler/deleteSong.php',
-        type: 'post',
+        type: 'delete',
         data: { 
             "id": id
         },
         success: function(response){
             alert("Sacuvano" + response);
-
         },
         error: function(xhr){
             alert("GRESKA" + xhr);
