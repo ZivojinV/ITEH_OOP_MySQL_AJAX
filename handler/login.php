@@ -10,7 +10,7 @@
     $conn = new mysqli($host, $username, $password, $db);
         
         if ($conn->connect_errno) {
-            exit("Konekcija neuspesna: " . $conn->connect_errno);
+            exit("Konekcija neuspesna:  " . $conn->connect_errno);
         }
         $username = $_GET["username"];
         $password = $_GET["password"];

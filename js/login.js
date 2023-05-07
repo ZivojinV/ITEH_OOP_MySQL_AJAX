@@ -13,13 +13,11 @@ function login() {
                 alert("GRESKA");
             }
             else {
-                // alert("123" + response);
                 const json = response;
                 const obj = JSON.parse(json);
-                const id = obj.id; // id will be "1" as a string
+                const id = obj.id;
                 localStorage.setItem('id', id);
                 location.href="player.html";
-                // getSong();
             }
         },
         error: function(xhr){

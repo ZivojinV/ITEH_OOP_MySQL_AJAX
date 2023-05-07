@@ -15,7 +15,7 @@
 
         $userID = $_GET["userID"];
 
-        $res = song::getById($userID, $conn);
+        $res = song::getByUserId($userID, $conn);
 
         while($data = $res->fetch_assoc()){
             echo json_encode($data['id']."|".$data['name']."|");

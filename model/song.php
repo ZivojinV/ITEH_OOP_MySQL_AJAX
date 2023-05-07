@@ -28,7 +28,7 @@
             return $conn->query($q); 
         }
 
-        public static function getById($userID, mysqli $conn){
+        public static function getByUserId($userID, mysqli $conn){
             $q = "SELECT s.id, s.name FROM playlist.song s WHERE s.userID='$userID'";
             return $conn->query($q); 
         }

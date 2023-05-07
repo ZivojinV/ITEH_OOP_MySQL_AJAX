@@ -14,7 +14,7 @@
         }
 
         public static function register($username, $password, mysqli $conn){
-            $q = "INSERT INTO playlist2.user(username, password) VALUES('$username', '$password')";
+            $q = "INSERT INTO playlist.user(username, password) VALUES('$username', '$password')";
             return $conn->query($q)->fetch_assoc();
         }
     }
