@@ -13,7 +13,7 @@
             exit("Konekcija neuspesna: " . $conn->connect_errno);
         }
 
-        $userID = $_GET["userID"];
+        $userID = $_COOKIE['user_id'];
 
         $res = song::getByUserId($userID, $conn);
 

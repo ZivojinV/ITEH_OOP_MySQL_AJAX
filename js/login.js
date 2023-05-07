@@ -16,7 +16,6 @@ function login() {
                 const json = response;
                 const obj = JSON.parse(json);
                 const id = obj.id;
-                localStorage.setItem('id', id);
                 location.href="player.html";
             }
         },

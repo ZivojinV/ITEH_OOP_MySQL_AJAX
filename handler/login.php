@@ -18,7 +18,7 @@
         echo json_encode($res);
 
         if($res != null){
-            $_SESSION['id']=$res['id'];
+            setcookie('user_id', $res['id'], time() + 3600);
         }
     } catch(Exception $e){
         echo $e->getMessage() . "<br/>";

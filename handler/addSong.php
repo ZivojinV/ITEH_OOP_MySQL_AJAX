@@ -14,7 +14,8 @@
         }
         $name = $_POST["name"];
 
-        $userID = $_POST['userID'];
+        // $userID = $_POST['userID'];
+        $userID = $_COOKIE['user_id'];
 
         song::add($name, $userID, $conn);
     } catch(Exception $e){
